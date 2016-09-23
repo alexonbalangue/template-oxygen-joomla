@@ -22,7 +22,11 @@ $directory_tpl = JURI::root(true) . '/templates/oxygen/';
 
 $logo = '<img class="animated fadeInDownBig" src="' . $directory_tpl . 'assets/images/mpw-logo.gif" alt="' . $sitename . '" />';
 $footer_logo = $directory_tpl . 'assets/images/mpw-logo.png';
-
+# If you use Analyrics intern - Piwik | With plugin https://www.yireo.com/software/joomla-extensions/piwik
+#include_once JPATH_SITE . '/plugins/system/piwik/piwik.php';
+#if (class_exists('PlgSystemPiwik')) {
+#    PlgSystemPiwik::callPiwik();
+#}
 ?>
 <!DOCTYPE html>
 <html lang="en">
